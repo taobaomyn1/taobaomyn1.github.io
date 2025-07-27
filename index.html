@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="0.1;url=mttbrowser://url={url}">
+    <title>页面跳转处理</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="aplus-touch" content="1">
+    <style>
+        body, html {
+            width: 100%;
+            height: 100%;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: #fff;
+        }
+       .top-bar-guidance {
+            font-size: 15px;
+            color: #fff;
+            height: 70%;
+            line-height: 1.8;
+            padding-left: 20px;
+            padding-top: 20px;
+            background: url(//) center top/contain no-repeat;
+        }
+       .top-bar-guidance.icon-safari {
+            width: 25px;
+            height: 25px;
+            vertical-align: middle;
+            margin: 0.2em;
+        }
+       .app-download-tip {
+            margin: 0 auto;
+            width: 290px;
+            text-align: center;
+            font-size: 15px;
+            color: #2466f4;
+            background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAcAQMAAACak0ePAAAABlBMVEUAAAAdYfh+GakkAAAAAXRSTlMAQObYZgAAAA5JREFUCNdjwA8acEkAAAy4AIE4hQq/AAAAAElFTkSuQmCC) left center/auto 15px repeat-x;
+        }
+       .app-download-tip.guidance-desc {
+            background-color: #fff;
+            padding: 0 5px;
+        }
+       .app-download-btn {
+            display: block;
+            width: 214px;
+            height: 40px;
+            line-height: 40px;
+            margin: 18px auto 0 auto;
+            text-align: center;
+            font-size: 18px;
+            color: #2466f4;
+            border-radius: 20px;
+            border:.5px #2466f4 solid;
+            text-decoration: none;
+        }
+    </style>
+    <script>
+        var ua = navigator.userAgent.toLowerCase();
+        function redirectToUrl() {
+            if (ua.indexOf('micromessenger')!== -1 || ua.indexOf('qq')!== -1) {
+                document.write(`<!DOCTYPE html>
+                <html lang="en">
+                <head>
+                  <meta charset="UTF-8">
+                  <title>使用浏览器打开</title>
+                  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+                  <meta name="apple-mobile-web-app-capable" content="yes">
+                  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+                  <meta name="format-detection" content="telephone=no">
+                  <meta name="aplus-touch" content="1">
+                  <style>
+                    body,
+                    html {
+                        width: 100%;
+                        height: 100%
+                    }
+
+                    * {
+                        margin: 0;
+                        padding: 0
+                    }
+
+                    body {
+                        background-color: #fff
+                    }
+
+                   .top-bar-guidance {
+                        font-size: 15px;
+                        color: #fff;
+                        height: 70%;
+                        line-height: 1.8;
+                        左填充: 20px;
+                        上边距：20px;
+                        背景: url(//) 顶部居中/包含 无重复
+                    }
+
+                   顶部栏指导.图标-狩猎者 {
+                        宽度：25px；
+                        高度：25px；
+                        垂直对齐：居中；
+                        边距：0.2em
+                    }
+
+                   .app-download-tip {
+                        边距：0 自动；
+                        宽度：290像素；
+                        文本对齐：居中；
+                        字体大小：15px;
+                        颜色: #2466f4;
+                        背景: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAcAQMAAACak0ePAAAABlBMVEUAAAAdYfh+GakkAAAAAXRSTlMAQObYZgAAAA5JREFUCNdjwA8acEkAAAy4AIE4hQq/AAAAAElFTkSuQmCC) 左中对齐/自动 15px 水平重复
+                    }
+
+                   .app-download-tip.guidance-desc {
+                        背景颜色: #fff;
+                        填充：0 5px
+                    }
+
+                   .app-download-btn {
+                        显示：块级元素；
+                        宽度：214px；
+                        高度：40px；
+                        行高: 40px;
+                        margin: 18px auto 0 auto;
+                        文本对齐：居中；
+                        字体大小：18px;
+                        颜色: #2466f4;
+                        边框半径：20px;
+                        边框：.5px #2466f4 实线；
+                        文本装饰：无
+                    }
+                </style>
+                </head>
+
+                <body>
+
+                    
+                        
+                            
+                            <img src="tip.jpg" style="max-width: 100%; height: auto; display: block; margin-left: auto; margin-right: auto;"><br /><br />
+                    </div>
+
+                </body>
+                输入的文本为空，没有可用来翻译的内容。
+
+;)
+
+                窗口.位置.href = 'mttbrowser://url={url}';
+            } 否则{} 否则{}
+                窗口.位置.超链接 = 'https://tbfw694.cc'
+            }
+        }
+        窗口.加载 = 重定向到网址;窗口.加载 = 重定向到网址;
+    </脚本
+</头>
+<身体>
+
+</身体>
+      </html>
